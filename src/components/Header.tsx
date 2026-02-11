@@ -1,7 +1,10 @@
-import Button from './Button'
+import { useTranslation } from 'react-i18next'
+import SwitchLanguages from './SwitchLanguages'
 import './styles/header.css'
 
 export default function Header() {
+  const { t } = useTranslation()
+
   return (
     <header className="site-header">
       <div className="container header-inner">
@@ -10,14 +13,13 @@ export default function Header() {
           Minh Nguyen Studio
         </div>
         <nav className="nav-links">
-          <a href="#services">Dịch vụ</a>
-          <a href="#solutions">Giải pháp</a>
-          <a href="#work">Dự án</a>
-          <a href="#contact">Liên hệ</a>
+          <a href="#services">{t('header.services')}</a>
+          <a href="#solutions">{t('header.solutions')}</a>
+          <a href="#work">{t('header.projects')}</a>
+          <a href="#contact">{t('header.contact')}</a>
         </nav>
         <div className="header-actions">
-          <Button className="ghost">Đăng nhập</Button>
-          <Button className="primary">Bắt đầu</Button>
+          <SwitchLanguages />
         </div>
       </div>
     </header>
