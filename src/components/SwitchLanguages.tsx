@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import flagUK from '../assets/images/UK.svg'
+import flagVN from '../assets/images/VN.svg'
 import './styles/switchLanguages.css'
 
 const LANGUAGES = [
-  { code: 'vi', label: 'Tiếng Việt' },
-  { code: 'en', label: 'English' },
+  { code: 'vi', label: 'Tiếng Việt', flag: flagVN },
+  { code: 'en', label: 'English', flag: flagUK },
 ]
 
 export default function SwitchLanguages() {
@@ -13,8 +15,8 @@ export default function SwitchLanguages() {
   const wrapperRef = useRef<HTMLDivElement | null>(null)
 
   const currentLang = i18n.language?.startsWith('vi') ? 'vi' : 'en'
-  const currentLabel =
-    LANGUAGES.find((lang) => lang.code === currentLang)?.label ?? 'English'
+  const currentItem =
+    LANGUAGES.find((lang) => lang.code === currentLang) ?? LANGUAGES[1]
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -53,7 +55,8 @@ export default function SwitchLanguages() {
         aria-haspopup="listbox"
         aria-expanded={open}
       >
-        <span className="lang-current">{currentLabel}</span>
+        <img className="lang-flag" src={currentItem.flag} alt="" />
+        <span className="lang-current">{currentItem.label}</span>
         <span className={`lang-caret ${open ? 'open' : ''}`} aria-hidden="true" />
       </button>
       {open && (
@@ -71,7 +74,10 @@ export default function SwitchLanguages() {
               }
               onClick={() => handleSelect(lang.code)}
             >
-              <span>{lang.label}</span>
+              <span className="lang-option-label">
+                <img className="lang-flag" src={lang.flag} alt="" />
+                <span>{lang.label}</span>
+              </span>
               {lang.code === currentLang && <span className="dot" />}
             </button>
           ))}

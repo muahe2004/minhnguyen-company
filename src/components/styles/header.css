@@ -1,3 +1,5 @@
+@import url("../../assets/styles/theme.css");
+
 .site-header {
   position: sticky;
   top: 0;
@@ -10,33 +12,43 @@
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 24px;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .brand {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-weight: 600;
-  letter-spacing: 0.4px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  cursor: pointer;
 }
 
-.brand-mark {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--sunset), var(--ocean));
-  box-shadow: 0 0 0 4px rgba(249, 115, 96, 0.15);
+.brand:hover,
+.brand:focus-visible {
+  color: var(--primary-color);
 }
 
-.nav-links {
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.headers-links {
   display: flex;
   align-items: center;
-  gap: 18px;
+  margin-left: auto;
+  gap: 36px;
   font-size: 0.95rem;
-  color: var(--muted);
+  font-weight: 600;
+}
+
+.header-item:hover {
+  color: var(--primary-color);
 }
 
 .header-actions {

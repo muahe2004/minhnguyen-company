@@ -8,15 +8,21 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <div className="brand">
-          <span className="brand-mark" />
-          Minh Nguyen Studio
-        </div>
-        <nav className="nav-links">
-          <a href="#services">{t('header.services')}</a>
-          <a href="#solutions">{t('header.solutions')}</a>
-          <a href="#work">{t('header.projects')}</a>
-          <a href="#contact">{t('header.contact')}</a>
+        <a className="brand" href="/">
+          <img
+            className="brand-logo"
+            src="/logoseta.svg"
+            alt="Minh Nguyen"
+            aria-hidden="true"
+          />
+          <span>MINH NGUYEN</span>
+        </a>
+        <nav className="headers-links">
+          <a className="header-item" href="#about-us">{t('header.about-us')}</a>
+          <a className="header-item" href="#services">{t('header.services')}</a>
+          <a className="header-item" href="#solutions">{t('header.solutions')}</a>
+          <a className="header-item" href="#work">{t('header.projects')}</a>
+          <a className="header-item" href="#contact">{t('header.contact')}</a>
         </nav>
         <div className="header-actions">
           <SwitchLanguages />
