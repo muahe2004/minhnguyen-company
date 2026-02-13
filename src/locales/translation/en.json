@@ -5,5 +5,10 @@
         "solutions": "Solutions",
         "projects": "Projects",
         "contact": "Contact"
+    },
+    "home": {
+        "title": "Your Trusted Partner.",
+        "description": "We specialize in the installation, dismantling, and turnkey construction of industrial storage racking systems, optimizing space and workflow.",
+        "contact-button": "Contact Us"
     }
 }

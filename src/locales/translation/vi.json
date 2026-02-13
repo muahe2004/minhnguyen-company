@@ -5,5 +5,10 @@
         "solutions": "Giải pháp",
         "projects": "Dự án",
         "contact": "Liên hệ"
+    },
+    "home": {
+        "title": "Đối tác đáng tin cậy của bạn.",
+        "description": "Chuyên lắp đặt, tháo dỡ và thi công trọn gói hệ thống giá kệ để hàng công nghiệp, tối ưu hóa không gian lưu trữ và vận hành.",
+        "contact-button": "Liên hệ chúng tôi."
     }
 }

@@ -6,7 +6,7 @@ export default function Header() {
   const { t } = useTranslation()
 
   return (
-    <header className="site-header">
+    <header className="header">
       <div className="container header-inner">
         <a className="brand" href="/">
           <img
