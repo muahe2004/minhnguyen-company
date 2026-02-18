@@ -15,7 +15,7 @@
   padding: 10px 0;
 }
 
-.brand {
+.header-brand {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -26,18 +26,18 @@
   cursor: pointer;
 }
 
-.brand:hover,
-.brand:focus-visible {
+.header-brand:hover,
+.header-brand:focus-visible {
   color: var(--primary-color);
 }
 
-.brand-logo {
+.header-brand__logo {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
 
-.headers-links {
+.header-links {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -46,7 +46,7 @@
   font-weight: 600;
 }
 
-.header-item:hover {
+.header-link__item:hover {
   color: var(--primary-color);
 }
 

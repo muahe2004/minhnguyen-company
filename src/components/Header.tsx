@@ -8,21 +8,21 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <a className="brand" href="/">
+        <a className="header-brand" href="/">
           <img
-            className="brand-logo"
+            className="header-brand__logo"
             src="/logoseta.svg"
             alt="Minh Nguyen"
             aria-hidden="true"
           />
           <span>MINH NGUYEN</span>
         </a>
-        <nav className="headers-links">
-          <a className="header-item" href="#about-us">{t('header.about-us')}</a>
-          <a className="header-item" href="#services">{t('header.services')}</a>
-          <a className="header-item" href="#solutions">{t('header.solutions')}</a>
-          <a className="header-item" href="#work">{t('header.projects')}</a>
-          <a className="header-item" href="#contact">{t('header.contact')}</a>
+        <nav className="header-links">
+          <a className="header-link__item" href="#about-us">{t('header.about-us')}</a>
+          <a className="header-link__item" href="#services">{t('header.services')}</a>
+          <a className="header-link__item" href="#solutions">{t('header.solutions')}</a>
+          <a className="header-link__item" href="#work">{t('header.projects')}</a>
+          <a className="header-link__item" href="#contact">{t('header.contact')}</a>
         </nav>
         <div className="header-actions">
           <SwitchLanguages />

@@ -1,0 +1,27 @@
+@import url("../../../../assets/styles/theme.css");
+
+.home-stats {
+    margin-top: 40px;
+}
+
+.home-stats__about {
+    margin-bottom: 20px;
+}
+
+.home-stats__title {
+    color: var(--primary-color);
+}
+
+.home-stats__subtitle {
+    width: 80%;
+}
+
+.home-stats__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.home-stats__number {
+    color: var(--primary-color);
+}

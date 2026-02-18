@@ -1,0 +1,31 @@
+.home-hero {
+  /* min-height: 100vh; */
+  padding: 0;
+  display: block;
+  position: relative;
+}
+
+.hero-hero__banner {
+  width: 100%;
+  height: calc(100vh - 60px);
+  object-fit: cover;
+  display: block;
+}
+
+.home-content {
+  position: absolute;
+  color: #ffffff;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+}
+
+.home-content__title {
+  margin-bottom: 10px;
+  font-size: 48px;
+}
+
+.home-content__desc {
+  margin-bottom: 10px;
+}
