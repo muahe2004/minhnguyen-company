@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Button from '../../../components/Button';
-import './styles/MainBanner.css';
+import './styles/mainBanner.css';
 
 export default function MainBanner() {
     const { t } = useTranslation()

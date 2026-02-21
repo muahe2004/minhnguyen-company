@@ -25,3 +25,8 @@
 .home-stats__number {
     color: var(--primary-color);
 }
+
+.home-stats__desc {
+    font-weight: 600;
+    font-size: 18px;
+}
