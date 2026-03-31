@@ -1,3 +1,7 @@
 :root {
   --primary-color: #2b2e91;
+  --secondary-color: #f21b25;
+
+  --font-size-h1: 50px;
+  --font-size-h2: 48px;
 }

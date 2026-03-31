@@ -9,18 +9,19 @@ export default function MainBanner() {
         <section>
             <div className="home-hero" id="services">
                 <img className="hero-hero__banner" src="/images/banner1.png" alt="" />
-            </div>
+                <div className="home-content">
+                    <div className="home-content__inner">
+                        <h1 className='home-content__title'>
+                            {t('home.title')}
+                        </h1>
 
-            <div className='home-content'>
-                <h2 className='home-content__title'>
-                    {t('home.title')}
-                </h2>
+                        <p className='home-content__desc'>
+                            {t('home.description')}
+                        </p>
 
-                <p className='home-content__desc'>
-                    {t('home.description')}
-                </p>
-
-                <Button className='secondary-button'>{t('home.contact-button')}</Button>
+                        <Button className='secondary-button'>{t('home.contact-button')}</Button>
+                    </div>
+                </div>
             </div>
         </section>
     )

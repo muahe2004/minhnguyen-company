@@ -1,7 +1,4 @@
 .home-hero {
-  /* min-height: 100vh; */
-  padding: 0;
-  display: block;
   position: relative;
 }
 
@@ -14,18 +11,28 @@
 
 .home-content {
   position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
   color: #ffffff;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  width: 45%;
+}
+
+.home-content__inner {
+  width: min(1120px, 90vw);
+  margin: 0 auto;
 }
 
 .home-content__title {
-  margin-bottom: 10px;
-  font-size: 48px;
+  margin-bottom: 18px;
+  font-size: var(--font-size-h1);
+  line-height: 1.05;
+  font-weight: var(--font-weight-heading);
+  letter-spacing: -0.03em;
 }
 
 .home-content__desc {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  max-width: 680px;
+  font-size: 16px;
+  line-height: 1.7;
 }

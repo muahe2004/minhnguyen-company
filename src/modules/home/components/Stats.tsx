@@ -6,11 +6,12 @@ export default function Stats() {
         <section>
             <div className="container home-stats">
                 <div className='home-stats__about'>
-                    <h1 className='home-stats__title'>Công ty TNHH MTV TBCN và Xây dựng Minh Nguyen</h1>
+                    <h1 className='home-stats__title'>
+                        Doanh nghiệp <span className='home-stats__accent'>Uy tín</span> và{' '}
+                        <span className='home-stats__accent'>Chuyên nghiệp</span>
+                    </h1>
                     <p className='home-stats__subtitle'>
-                        Công ty TNHH MTV TBCN và Xây dựng Minh Nguyen là đơn vị uy tín trong lĩnh vực thi công, lắp đặt, tháo dỡ và bảo trì hệ thống giá kệ công nghiệp. 
-                        Với đội ngũ kỹ thuật viên lành nghề và kinh nghiệm thực tiễn lâu năm, chúng tôi cam kết mang đến giải pháp an toàn, hiệu quả và tối ưu chi phí.
-                        Bên cạnh lắp đặt giá kệ kho hàng, kệ siêu thị và kết cấu thép, Minh Nguyen còn cung cấp dịch vụ di dời, cải tạo và bảo trì định kỳ, đảm bảo hệ thống vận hành bền vững và ổn định theo thời gian.
+                        Minh Nguyên chuyên thi công, lắp đặt, tháo dỡ và bảo trì hệ thống giá kệ công nghiệp với giải pháp an toàn, hiệu quả, tối ưu chi phí.
                     </p>
                 </div>
                 <ul className='home-stats__list'>

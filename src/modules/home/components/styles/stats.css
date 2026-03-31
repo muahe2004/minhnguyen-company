@@ -1,7 +1,7 @@
 @import url("../../../../assets/styles/theme.css");
 
 .home-stats {
-    margin-top: 40px;
+    margin-top: 110px;
 }
 
 .home-stats__about {
@@ -9,12 +9,17 @@
 }
 
 .home-stats__title {
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
+    font-size: var(--font-size-h2);
 }
 
+.home-stats__accent {
+    color: var(--secondary-color);
+}
+/* 
 .home-stats__subtitle {
     width: 80%;
-}
+} */
 
 .home-stats__list {
     display: flex;
@@ -24,6 +29,7 @@
 
 .home-stats__number {
     color: var(--primary-color);
+    font-size: 48px;
 }
 
 .home-stats__desc {
