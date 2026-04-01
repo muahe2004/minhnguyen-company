@@ -33,39 +33,6 @@ const slides = [
   },
 ]
 
-const customers = [
-  {
-    name: 'Minh Nguyen',
-    logo: '/logoseta.svg',
-    alt: 'Minh Nguyen logo',
-  },
-  {
-    name: 'Warehouse One',
-    logo: '/images/banner.png',
-    alt: 'Warehouse one placeholder',
-  },
-  {
-    name: 'Industrial Pro',
-    logo: '/images/banner1.png',
-    alt: 'Industrial pro placeholder',
-  },
-  {
-    name: 'Brand Partner',
-    logo: '/images/banner.png',
-    alt: 'Brand partner placeholder',
-  },
-  {
-    name: 'Retail Hub',
-    logo: '/images/banner1.png',
-    alt: 'Retail hub placeholder',
-  },
-  {
-    name: 'Factory Link',
-    logo: '/logoseta.svg',
-    alt: 'Factory link placeholder',
-  },
-]
-
 export default function AboutUs() {
   const [activeSlide, setActiveSlide] = useState(0)
 
@@ -114,71 +81,6 @@ export default function AboutUs() {
           ))}
         </div>
 
-        <div className="about-us__clients">
-          <div className="about-us__clients-header">
-            <p className="about-us__clients-kicker">Khách hàng</p>
-            <h2 className="about-us__clients-title">Danh sách khách hàng của chúng tôi</h2>
-          </div>
-
-          <div className="about-us__clients-grid">
-            {customers.map((customer) => (
-              <article className="about-us__client-card" key={customer.name}>
-                <div className="about-us__client-logo">
-                  <img src={customer.logo} alt={customer.alt} />
-                </div>
-                <p className="about-us__client-name">{customer.name}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-
-        <div className="about-us__contact" id="contact">
-          <div className="about-us__contact-panel">
-            <div className="about-us__contact-visual">
-              <div className="about-us__contact-visual-overlay" />
-              <div className="about-us__contact-copy">
-                <h2 className="about-us__contact-title">Contact Us</h2>
-                <p className="about-us__contact-text">
-                  You can reach us anytime via
-                  <a href="mailto:contact@seta-international.vn">
-                    contact@seta-international.vn
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <form className="about-us__contact-form" onSubmit={(event) => event.preventDefault()}>
-              <div className="about-us__contact-field">
-                <label htmlFor="full-name">Full Name *</label>
-                <input id="full-name" type="text" placeholder="Your Full Name" />
-              </div>
-
-              <div className="about-us__contact-field">
-                <label htmlFor="phone-number">Phone Number</label>
-                <input id="phone-number" type="tel" placeholder="Your Phone Number" />
-              </div>
-
-              <div className="about-us__contact-field">
-                <label htmlFor="email">Email *</label>
-                <input id="email" type="email" placeholder="Your Email" />
-              </div>
-
-              <div className="about-us__contact-field">
-                <label htmlFor="company">Company</label>
-                <input id="company" type="text" placeholder="Your Company" />
-              </div>
-
-              <div className="about-us__contact-field about-us__contact-field--full">
-                <label htmlFor="message">Message</label>
-                <textarea id="message" rows={5} placeholder="Leave us a message..." />
-              </div>
-
-              <button className="about-us__contact-submit" type="submit">
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
       </div>
     </section>
   )
