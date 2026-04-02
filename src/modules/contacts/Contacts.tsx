@@ -14,7 +14,7 @@ export default function Contacts() {
               <h2 className="about-us__contact-title">Contact Us</h2>
               <p className="about-us__contact-text">
                 You can reach us anytime via
-                <a href="mailto:contact@seta-international.vn">contact@seta-international.vn</a>
+                <a href="mailto:minh.ly@blueoc.tech">minh.ly@blueoc.tech</a>
               </p>
             </div>
           </div>

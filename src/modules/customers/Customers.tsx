@@ -1,3 +1,4 @@
+import CustomerCard from './components/CustomerCard'
 import './customers.css'
 
 const customers = [
@@ -31,25 +32,48 @@ const customers = [
     logo: '/images/thienLong.png',
     alt: 'Thien Long logo',
   },
+  {
+    name: 'Minh Nguyen',
+    logo: '/images/banner.png',
+    alt: 'Minh Nguyen logo',
+  },
+  {
+    name: 'Industrial Partner',
+    logo: '/images/banner1.png',
+    alt: 'Industrial Partner logo',
+  },
+  {
+    name: 'Warehouse One',
+    logo: '/images/banner.png',
+    alt: 'Warehouse One logo',
+  },
 ]
 
 export default function Customers() {
-  return (
-    <section className="customers">
-      <div className="container">
-        <div className="customers__header">
-          <h2 className="customers__title">Danh sách khách hàng của chúng tôi</h2>
-        </div>
+  const scrollingCustomers = [...customers, ...customers]
 
-        <div className="customers__grid">
-          {customers.map((customer) => (
-            <article className="customers__card" key={customer.name}>
-              <div className="customers__logo">
-                <img src={customer.logo} alt={customer.alt} />
-              </div>
-              <p className="customers__name">{customer.name}</p>
-            </article>
-          ))}
+  return (
+    <section className="customers-strip" aria-label="Danh sách khách hàng">
+      <div className="container customers-strip__inner">
+        <p className="customers-strip__label">
+          KHACH
+          <br />
+          HANG
+        </p>
+        <div className="customers-strip__divider" />
+
+        <div className="customers-strip__marquee">
+          <div className="customers-strip__track">
+            {scrollingCustomers.map((customer, index) => (
+              <CustomerCard
+                key={`${customer.name}-${index}`}
+                name={customer.name}
+                logo={customer.logo}
+                alt={customer.alt}
+                showName={false}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

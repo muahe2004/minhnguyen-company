@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-brand">
           <div className="brand">
             <span className="brand-mark" />
-            Minh Nguyen Studio
+            Minh Nguyen
           </div>
           <p>
             Studio thiết kế và chiến lược cho các đội ngũ đang tăng trưởng nhanh
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 2026 Minh Nguyen Studio. All rights reserved.</span>
+        <span>© 2026 Minh Nguyen. All rights reserved.</span>
         <div className="footer-legal">
           <a href="#">Chính sách</a>
           <a href="#">Điều khoản</a>
